@@ -1,0 +1,5 @@
+media/
+bots/migrations/
+pages/migrations/
+accounts/migrations/
+db.sqlite3
