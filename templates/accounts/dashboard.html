@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class='dashboard'>
+    <h1>Dashboard</h1>
+    <div class="amount">
+       <h3 style="margin-bottom: 10px">Your Earnings: 0</h3>
+       <a href="{% url 'ads_page' %}" class="button">Click Here For Earning</a>
+    </div>
+ </section>
+{% endblock %}

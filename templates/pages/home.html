@@ -1,4 +1,111 @@
 {% extends 'base.html' %}
 {% block body %}
-<h1>Home</h1>
+
+   <!-- Intro Section
+   ================================================== -->
+   <section id="intro">
+
+    <!-- Flexslider Start-->
+     <div id="intro-slider" class="flexslider">
+
+         <ul class="slides">
+
+             <!-- Slide -->
+             <li>
+                 <div class="row">
+                     <div class="twelve columns">
+                         <div class="slider-text">
+                             <h1>Earn Money By Tapping On Ads<span>.</span></h1>
+                             <p>Start earning upto ₹10 everyday just for tapping at ads. You can recieve your payout as soon as you reach ₹100 through your PayTM or GooglePay. So Join Quick Before The Vacancy For Signing Up Filled.</p>
+<!-- 						   </div>
+                   <div class="slider-image">
+                      <img src="images/sliders/home-slider-image-01.png" alt="" />
+                   </div>
+                     </div> -->
+                 </div>
+             </li>
+
+          <!-- Slide -->
+             <li>
+                 <div class="row">
+                     <div class="twelve columns">
+                         <div class="slider-text">
+                             <h1>Genuine Website With Trustablity<span>.</span></h1>
+                             <p>We are using <strong>VPS Hosting</strong> which means you are assured of speed and high quality content, and we use ssl certificate, Your datas are completely secure with us and reqular payouts are assured.</p>
+<!-- 						   </div>
+                   <div class="slider-image">
+                      <img src="images/sliders/home-slider-image-02.png" alt="" />
+                   </div>
+                     </div> -->
+                 </div>
+             </li>
+
+         </ul>
+
+     </div> <!-- Flexslider End-->
+
+ </section> <!-- Intro Section End-->
+
+ <!-- Info Section
+ ================================================== -->
+ <section id="info">
+
+    <div class="row">
+
+       <div class="bgrid-quarters s-bgrid-halves">
+
+         <div class="columns">
+            <h2>Clean & Modern.</h2>
+
+            <p>The website has a simple but modern interface which is pretty easier to use and you can learn to use this website within minutes and we maintain the website from spam and other such things</p>
+         </div>
+
+         <div class="columns">
+            <h2>Easier To Use.</h2>
+
+            <p>The Clean and modern interface assure you with easier to use ability and you can contact us through our emails</p>
+         </div>
+
+         <div class="columns s-first">
+            <h2>Trusted By Many.</h2>
+
+            <p>There are upto 100 users using our website daily to earn a side money from this website, and you can do that too pretty easily than you think.</p>
+         </div>
+
+         <div class="columns">
+            <h2>Good Type Of Ads</h2>
+
+            <p>The ads in our website is from google which means you won't get any inappropriote ads it will be based solely on your activities and things you like so you don't have to worry about it.</p>
+         </div>
+
+         </div>
+
+    </div>
+
+ </section> <!-- Info Section End-->
+
+ <!-- Call-To-Action Section
+ ================================================== -->
+ <section id="call-to-action">
+
+    <div class="row">
+
+       <div class="eight columns offset-1">
+
+          <h1><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Start Earning Quick With EarnByAds</a></h1>
+          <p>Looking for signing up, start by with this <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>Signup</span></a>.
+                  Earn upto <span>10rs</span> For Tapping On Ads <span>EarnByAds</span>. 
+                  <!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
+
+       </div>
+
+       <div class="three columns action">
+
+          <a href="{% url 'register' %}" class="button">Sign Up Now</a>
+
+       </div>
+
+    </div>
+
+ </section> <!-- Call-To-Action Section End-->
 {% endblock %}

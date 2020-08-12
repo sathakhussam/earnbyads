@@ -1,0 +1,44 @@
+
+<!-- Header
+================================================== -->
+<header>
+
+<div class="row">
+
+    <div class="twelve columns">
+
+        <div class="logo">
+        <h5><a style="color: #ffffff;" href="{% url 'home' %}">Earn By Ads</a></h5>               
+        </div>
+
+        <nav id="nav-wrap">
+
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+
+                <li {% if request.resolver_match.url_name == 'home' %}class="current"{% endif %}><a href="{% url 'home' %}">Home</a></li>
+            <li {% if request.resolver_match.url_name == 'ads_page' %}class="current"{% endif %}><a href="{% url 'ads_page' %}">Ads</a></li>
+            <li {% if request.resolver_match.url_name == 'about' %}class="current"{% endif %}><a href="{% url 'about' %}">About</a></li>
+            <li><span><a href="#">Accounts</a></span>
+                <ul>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                    {% endif %}
+                </ul>
+                
+            </li>
+
+            </ul> <!-- end #nav -->
+
+        </nav> <!-- end #nav-wrap -->
+
+    </div>
+
+</div>
+
+</header> <!-- Header End -->
